@@ -31,6 +31,7 @@
         >
           <a-option
             v-for="(value, key) of APP_TYPE_MAP"
+            :key="key"
             :value="Number(key)"
             :label="value"
           />
@@ -44,6 +45,7 @@
         >
           <a-option
             v-for="(value, key) of APP_SCORING_STRATEGY_MAP"
+            :key="key"
             :value="Number(key)"
             :label="value"
           />
@@ -133,7 +135,7 @@ const handleSubmit = async () => {
   if (res.data.code === 0) {
     message.success("操作成功，即将跳转到应用详情页");
     setTimeout(() => {
-      router.push(`/app/detail/${props.id ?? res.data.data}`);
+      router.push(`/app/detail/${props.id || res.data.data}`);
     }, 3000);
   } else {
     message.error("操作失败，" + res.data.message);
