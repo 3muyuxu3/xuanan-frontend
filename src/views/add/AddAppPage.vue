@@ -1,4 +1,5 @@
 <template>
+  <FluidCursor />
   <div id="addAppPage">
     <h2 style="margin-bottom: 32px">创建应用</h2>
     <a-form
@@ -71,6 +72,7 @@ import {
   getAppVoByIdUsingGet,
 } from "@/api/appController";
 import { APP_SCORING_STRATEGY_MAP, APP_TYPE_MAP } from "@/constant/app";
+import FluidCursor from "@/components/FluidCursor.vue";
 
 interface Props {
   id: string;
