@@ -1,3 +1,4 @@
+后端代码: https://github.com/3muyuxu3/xuanan-backend
 # xuanan-frontend
 
 基于 Vue 3 的答题应用平台前端。用户可以创建、发布答题应用（得分类 / 测评类），其他用户在线作答并由后台按自定义规则或 AI 策略评分，同时提供用户、题目、评分、回答等后台管理能力和数据统计能力。
